@@ -43,3 +43,6 @@ body {
     margin: 0%;
     border: 0%;
  }
+ .cat-pic {
+   float: right;
+ }
