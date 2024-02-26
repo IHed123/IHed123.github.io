@@ -45,4 +45,6 @@ body {
  }
  .cat-pic {
    float: right;
+   border: #B4BEC9;
+   border: 2rem;
  }
