@@ -44,6 +44,16 @@ body {
     border: 0%;
  }
  .cat-pic {
+   position: relative;
    float: right;
    border: solid;
+ }
+ div {
+   float: right;
+   border: solid;
+   width: 13rem;
+   height: fit-content;
+   position:absolute;
+   right:0;
+   top:0;
  }
