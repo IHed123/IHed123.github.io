@@ -4,6 +4,8 @@
  * Copyright 2014-2021 Froala Labs
  */
 
+ 
+
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -29,12 +31,12 @@
   background-clip: padding-box; }
 
 .fr-view img.fr-shadow, .fr-view .fr-img-caption.fr-shadow img {
-  -webkit-box-shadow: 10px 10px 5px 0px #cccccc;
-  -moz-box-shadow: 10px 10px 5px 0px #cccccc;
-  box-shadow: 10px 10px 5px 0px #cccccc; }
+  -webkit-box-shadow: 10px 10px 5px 0px #ffffff;
+  -moz-box-shadow: 10px 10px 5px 0px #ffffff;
+  box-shadow: 10px 10px 5px 0px #ffffff; }
 
 .fr-view img.fr-bordered, .fr-view .fr-img-caption.fr-bordered img {
-  border: solid 5px #CCC; }
+  border: solid 5px #ffffff; }
 
 .fr-view img.fr-bordered {
   -webkit-box-sizing: content-box;
@@ -64,9 +66,9 @@
     .fr-view table.fr-dashed-borders td, .fr-view table.fr-dashed-borders th {
       border-style: dashed; }
     .fr-view table.fr-alternate-rows tbody tr:nth-child(2n) {
-      background: whitesmoke; }
+      background: #799E9E;}
     .fr-view table td, .fr-view table th {
-      border: 1px solid #DDD; }
+      border: 1px solid #799E9E; }
       .fr-view table td:empty, .fr-view table th:empty {
         height: 20px; }
       .fr-view table td.fr-highlighted, .fr-view table th.fr-highlighted {
@@ -74,7 +76,7 @@
       .fr-view table td.fr-thick, .fr-view table th.fr-thick {
         border-width: 2px; }
     .fr-view table th {
-      background: #ececec; }
+      background: #799E9E; }
   .fr-view hr {
     clear: both;
     user-select: none;
@@ -133,7 +135,7 @@
       line-height: 1;
       vertical-align: middle; }
   .fr-view .fr-text-gray {
-    color: #AAA !important; }
+    color: #ffffff !important; }
   .fr-view .fr-text-bordered {
     border-top: solid 1px #222;
     border-bottom: solid 1px #222;
@@ -152,7 +154,7 @@
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background: #f5f5f5;
+    background: #799e79;
     padding: 10px;
     font-family: "Courier New", Courier, monospace; }
   .fr-view .fr-class-transparency {
@@ -2320,7 +2322,7 @@ a {
   left: 0px;
   width: 100%;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   padding: 20px;
   border: none;
 }
@@ -42487,6 +42489,11 @@ border-radius: 10px;
 .u-section-1 .u-over-slide-50 {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
   padding: 20px;
+
+  
+
+
+
 }/*end-variables custom-site-css*/
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
