@@ -19,7 +19,7 @@ body {
     border: solid #D3D3D3 5px;
     display: block;
     text-align: center;
-    width: 150px;
+    width: 200px;
     margin: 0 auto;
     border-radius: 5%;
  }
@@ -50,7 +50,7 @@ body {
    float: right;
    border: solid;
  }
- div {
+ .floating-box {
    float: right;
    border: solid;
    width: 13rem;
@@ -59,3 +59,6 @@ body {
    right:0;
    top:0;
  }
+ .hidden {
+  display: none;
+}
