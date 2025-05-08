@@ -1,128 +1,134 @@
 body {
-  background-color: #799E9E;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-}
-.creditspara {
+  background: linear-gradient(to right, #e3e3e3, #d0d0d0);
+  font-family: 'inter',sans-serif;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  }
+  
+  .creditspara {
   margin: 1px;
-}
-a:link, a:visited {
+  }
+  
+  a:link,
+  a:visited {
   text-decoration: none;
-  color: #646464; /* Lighter color for better readability */
-}
-
-a:hover {
-  text-decoration: none;
-  color: #D1F6F6;
-}
-
-h1 {
-  display: block;
+  color: #00796b;
+  }
+  
+  a:hover {
+  color: #004d40;
+  text-decoration: underline;
+  }
+  
+  h1 {
+    background-color: #00bfa5;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
   text-align: center;
-  width: 200px;
-  margin: 0 auto;
-  border-radius: 5%;
-}
-
-button {
-  color: #ffffff;
-  background-color: #008CBA; /* Slightly lighter color */
+  padding: 12px 24px;
   border-radius: 12px;
-  border: none;
-  font-size: 1rem;
-  padding: 5px 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 2px #4e7091;
-}
-.expand-btn1 {
-  color: #ffffff;
-  background-color: #008CBA; /* Slightly lighter color */
-  border-radius: 12px;
-  border: none;
-  font-size: 1rem;
-  padding: 5px 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 2px #4e7091;
-}
-
-button:hover {
-  background-color: #005f73; /* Hover effect */
-}
-button:active {
-  background-color: #005f73;
-  box-shadow: 0 1px #4e7091;
-  transform: translateY(2px);
-}
-
-h2 {
-  color: #000000;
-  outline-color: #B4BEC9;
-  font-weight: 500;
-  margin: 0px
-}
-
-h4 {
+  width: fit-content;
+  margin: 2rem auto;
+  box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.463);
+  }
+  
+  h2,
+  h3 {
+  color: #004d40;
+  margin-bottom: 0.5rem;
+  }
+  
+  h4 {
   font-weight: 700;
   letter-spacing: 0.5px;
   margin: 0.3%;
-  color: rgb(74, 74, 74)
-}
-
-.work {
+  color: rgb(74, 74, 74);
+  }
+  
+  .work {
   margin: 1px;
   border: 0;
-}
-
-.cat-pic {
+  }
+  
+  button,
+  .expand-btn1 {
+  color: #ffffff;
+  background-color: #00acc1;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  button:hover,
+  .expand-btn1:hover {
+  background-color: #00838f;
+  transform: scale(1.03);
+  }
+  
+  button:active,
+  .expand-btn1:active {
+  background-color: #006064;
+  transform: scale(0.97);
+  }
+  
+  .cat-pic {
   position: absolute;
-  top: 8rem;
+  top: 9rem;
   right: 0;
   max-width: 100%;
   height: auto;
-  border: solid;
-}
-
-.floating-box {
-  border: solid;
-  width: 200px;
-  height: fit-content;
+  border: solid 2px #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .floating-box {
+  background: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  width: 240px;
   position: absolute;
   right: 0;
   top: 0;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.hidden {
-  display: none;
-  transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  h1 {
-      font-size: 1.5rem;
-      width: 80%;
-  }
-
-  .floating-box {
-      width: 100%;
-      position: static;
-      margin-top: 20px;
-  }
-
-  .cat-pic {
-      position: static;
-      width: 100%;
-      height: auto;
-      max-width: 300px;
-      margin-top: 20px;
-  }
-
-  .work {
-      font-size: 1rem;
+  font-size: 0.95rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.181);
   }
   
-}
+  .hidden {
+  display: none;
+  transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+  h1 {
+  font-size: 2rem;
+  }
+  
+  .floating-box {
+  width: 100%;
+  position: static;
+  margin-top: 20px;
+  box-shadow: none;
+  border-radius: 0;
+  }
+  
+  .cat-pic {
+  position: static;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin-top: 20px;
+  border: none;
+  }
+  
+  .work {
+  font-size: 1rem;
+  }
+  }
