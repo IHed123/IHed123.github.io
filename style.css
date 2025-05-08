@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right, #e3e3e3, #d0d0d0);
+  background: linear-gradient(to right, #8d99ae, #8d99ae);
   font-family: 'inter',sans-serif;
   font-weight: 400;
   color: #333;
@@ -14,7 +14,7 @@ body {
   a:link,
   a:visited {
   text-decoration: none;
-  color: #00796b;
+  color: #edf2f4;
   }
   
   a:hover {
@@ -23,8 +23,8 @@ body {
   }
   
   h1 {
-    background-color: #00bfa5;
-  color: white;
+    background-color: #edf2f4;
+  color: rgb(143, 143, 143);
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
@@ -37,7 +37,7 @@ body {
   
   h2,
   h3 {
-  color: #004d40;
+  color: rgb(49, 49, 49);
   margin-bottom: 0.5rem;
   }
   
@@ -56,11 +56,11 @@ body {
   button,
   .expand-btn1 {
   color: #ffffff;
-  background-color: #00acc1;
+  background-color: #2b2d42;
   border-radius: 8px;
   border: none;
   font-size: 1rem;
-  padding: 10px 16px;
+  padding: 5px 8px;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
   }
@@ -84,7 +84,7 @@ body {
   max-width: 100%;
   height: auto;
   border: solid 2px #ccc;
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
@@ -96,7 +96,7 @@ body {
   width: 240px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -1px;
   font-size: 0.95rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.181);
   }
