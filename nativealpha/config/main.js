@@ -1,4 +1,4 @@
-var sitename = "My Games";
+var sitename = "Isagfiles";
 var subtext = "v1.0";
 
 document.title = sitename;

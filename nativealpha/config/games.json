@@ -8,5 +8,10 @@
     "name": "Run 3",
     "url": "run3",
     "image": "run3.png"
+  },
+  {
+    "name": "2048",
+    "url": "2048",
+    "image": "2048.png"
   }
 ]
