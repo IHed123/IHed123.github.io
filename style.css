@@ -59,7 +59,8 @@ h4 {
   display: inline-block;
   background-color: #2b2d42;
   color: #edf2f4;
-  padding: 12px 20px;
+  padding: 10px 15px;
+  margin: 10px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   text-decoration: none;
@@ -79,6 +80,39 @@ h4 {
 .work a:active {
   transform: translateY(-3px) scale(0.97);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.workabout {
+  margin: 1px;
+  border: 0;
+}
+/* Bounce on hover */
+.workabout a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+/* Bounce on click */
+.workabout a:active {
+  transform: translateY(-3px) scale(0.97);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+/* New: Make links inside .work look like clickable boxes with bounce animation */
+.workabout a {
+  display: inline-block;
+  background-color: #2b2d42;
+  color: #edf2f4;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  top:10px;
+  left:10px;
 }
 
 button,
