@@ -1,20 +1,35 @@
 <html>
   <head>
-    <title>Asteroids</title>
     <script src="jquery-1.4.1.min.js"></script>
     <script src="vector_battle_regular.typeface.js"></script>
     <script src="ipad.js"></script>
     <script src="game.js"></script>
     <style>
-      #canvas { border:1px solid black; top:0px; left:0px; }
-      .button { position:absolute; border:1px solid black; }
-      #left-controls { position:absolute; left:1px; bottom:0px; display:none; }
-      #right-controls { position:absolute; right:1px; bottom:0px; display:none; }
-      #up { width:200px; height:100px; bottom:100px;}
-      #left { width:100px; height:100px; bottom:0px;}
-      #right { width:100px; height:100px; bottom:0px; left:100px; }
-      #space { width:200px; height:200px; bottom:0px; right:0px; }
-    </style>
+  #canvas { border:1px solid rgb(255, 255, 255); top:0px; left:0px; }
+  .button { position:absolute; border:1px solid rgb(0, 0, 0); }
+  #left-controls { position:absolute; left:1px; bottom:0px; display:none; }
+  #right-controls { position:absolute; right:1px; bottom:0px; display:none; }
+  #up { width:200px; height:100px; bottom:100px;}
+  #left { width:100px; height:100px; bottom:0px;}
+  #right { width:100px; height:100px; bottom:0px; left:100px; }
+  #space { width:200px; height:200px; bottom:0px; right:0px; }
+  body {
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  #game-container {
+    position: relative;
+    width: 780px;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
   </head>
   <body>
     <div id="game-container">

@@ -47,3 +47,4 @@ fetch("config/games.json")
     displayGames(data);
   })
   .catch(err => console.error("Error loading games:", err));
+
