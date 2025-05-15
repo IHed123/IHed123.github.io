@@ -1,30 +1,30 @@
 body {
   background: linear-gradient(to right, #8d99ae, #8d99ae);
-  font-family: 'Inter', sans-serif;
+  font-family: 'inter',sans-serif;
   font-weight: 400;
   color: #333;
   line-height: 1.6;
   letter-spacing: 0.2px;
   padding: 20px;
-}
-
-.creditspara {
+  }
+  
+  .creditspara {
   margin: 1px;
-}
-
-a:link,
-a:visited {
+  }
+  
+  a:link,
+  a:visited {
   text-decoration: none;
   color: #edf2f4;
-}
-
-a:hover {
+  }
+  
+  a:hover {
   color: #004d40;
   text-decoration: underline;
-}
-
-h1 {
-  background-color: #edf2f4;
+  }
+  
+  h1 {
+    background-color: #edf2f4;
   color: rgb(143, 143, 143);
   font-size: 2rem;
   font-weight: 600;
@@ -34,55 +34,28 @@ h1 {
   width: fit-content;
   margin: 2rem auto;
   box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.463);
-}
-
-h2,
-h3 {
+  }
+  
+  h2,
+  h3 {
   color: rgb(49, 49, 49);
   margin-bottom: 0.5rem;
-}
-
-h4 {
+  }
+  
+  h4 {
   font-weight: 700;
   letter-spacing: 0.5px;
   margin: 0.3%;
   color: rgb(74, 74, 74);
-}
-
-.work {
+  }
+  
+  .work {
   margin: 1px;
   border: 0;
-}
-
-/* New: Make links inside .work look like clickable boxes with bounce animation */
-.work a {
-  display: inline-block;
-  background-color: #2b2d42;
-  color: #edf2f4;
-  padding: 12px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
-  user-select: none;
-}
-
-/* Bounce on hover */
-.work a:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
-}
-
-/* Bounce on click */
-.work a:active {
-  transform: translateY(-3px) scale(0.97);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
-
-button,
-.expand-btn1 {
+  }
+  
+  button,
+  .expand-btn1 {
   color: #ffffff;
   background-color: #2b2d42;
   border-radius: 8px;
@@ -91,21 +64,21 @@ button,
   padding: 5px 8px;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-button:hover,
-.expand-btn1:hover {
+  }
+  
+  button:hover,
+  .expand-btn1:hover {
   background-color: #00838f;
   transform: scale(1.03);
-}
-
-button:active,
-.expand-btn1:active {
+  }
+  
+  button:active,
+  .expand-btn1:active {
   background-color: #006064;
   transform: scale(0.97);
-}
-
-.cat-pic {
+  }
+  
+  .cat-pic {
   position: absolute;
   top: 9rem;
   right: 0;
@@ -114,9 +87,9 @@ button:active,
   border: solid 2px #ccc;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.floating-box {
+  }
+  
+  .floating-box {
   background: white;
   border: none;
   border-radius: 8px;
@@ -127,36 +100,37 @@ button:active,
   top: -1px;
   font-size: 0.95rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.181);
-}
-
-.hidden {
+  }
+  
+  .hidden {
   display: none;
   transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+  font-size: 2rem;
   }
-
+  
   .floating-box {
-    width: 100%;
-    position: static;
-    margin-top: 20px;
-    box-shadow: none;
-    border-radius: 0;
+  width: 100%;
+  position: static;
+  margin-top: 20px;
+  box-shadow: none;
+  border-radius: 0;
   }
-
+  
   .cat-pic {
-    position: static;
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    margin-top: 20px;
-    border: none;
+  position: static;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin-top: 20px;
+  border: none;
+  }
+  
+  .work {
+  font-size: 1rem;
   }
 
-  .work {
-    font-size: 1rem;
   }
-}
