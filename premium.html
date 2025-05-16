@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+firebase.auth().onAuthStateChanged(user => {
+  if (user && premiumEmails.includes(user.email)) {
+    // Allow access
+  } else {
+    window.location.href = "free.html"; // or sign-in page
+  }
+});
+</script>
+
+
+
 
    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
