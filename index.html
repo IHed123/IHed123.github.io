@@ -2,50 +2,48 @@
 <html>
 <head>
   <title>Login</title>
-  <!-- Firebase App (core) and Auth SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+  <meta charset="UTF-8" />
+  <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-auth-compat.js"></script>
+</head>
+<body>
+  <h1>Sign in to Access</h1>
+  <button onclick="signInWithGoogle()">Sign In with Google</button>
 
   <script>
-    // 1. Initialize Firebase
+    // ✅ Replace these with your actual Firebase config:
     const firebaseConfig = {
       apiKey: "AIzaSyBcxvI-0nwMA6m1Vw91pkLpeUludgbR8Kc",
-    authDomain: "premium-gweb.firebaseapp.com",
-    projectId: "premium-gweb",
-    storageBucket: "premium-gweb.firebasestorage.app",
-    messagingSenderId: "242312398363",
-    appId: "1:242312398363:web:a7008420a224e42692dabe",
-    measurementId: "G-GG62F9B9QW"
+      authDomain: "premium-gweb.firebaseapp.com",
+      projectId: "premium-gweb",
+      appId: "1:242312398363:web:a7008420a224e42692dabe"
     };
+
+    // ✅ Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
-    // 2. Premium Gmail list
-    const premiumEmails = ["youremail@gmail.com", "anotherpremium@gmail.com"];
+    // ✅ List of premium accounts
+    const premiumEmails = ["isa@myhla.org", "anotherpremium@gmail.com"];
 
-    // 3. Sign in function
+    // ✅ Sign in function
     function signInWithGoogle() {
       const provider = new firebase.auth.GoogleAuthProvider();
       firebase.auth().signInWithPopup(provider)
-        .then((result) => {
-          const user = result.user;
-          const email = user.email;
+        .then(result => {
+          const email = result.user.email;
+          console.log("Signed in as:", email);
 
-          // 4. Redirect based on email
           if (premiumEmails.includes(email)) {
             window.location.href = "premium.html";
           } else {
             window.location.href = "free.html";
           }
         })
-        .catch((error) => {
-          console.error("Login failed:", error.message);
-          alert("Sign-in failed. Check the console for details.");
+        .catch(error => {
+          console.error("Google sign-in error:", error);
+          alert("Error during sign-in: " + error.message);
         });
     }
   </script>
-</head>
-<body>
-  <h1>Sign in to Access</h1>
-  <button onclick="signInWithGoogle()">Sign In with Google</button>
 </body>
 </html>
