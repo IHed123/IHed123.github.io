@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+<script>
+  const firebaseConfig = { apiKey: "AIzaSyBcxvI-0nwMA6m1Vw91pkLpeUludgbR8Kc",
+    authDomain: "premium-gweb.firebaseapp.com",
+    projectId: "premium-gweb",
+    storageBucket: "premium-gweb.firebasestorage.app",
+    messagingSenderId: "242312398363",
+    appId: "1:242312398363:web:a7008420a224e42692dabe",
+    measurementId: "G-GG62F9B9QW" };
+  firebase.initializeApp(firebaseConfig);
+
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (!user) {
+      window.location.href = "index.html"; // redirect if not signed in
+    }
+  });
+</script>
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>| Quikschool</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!--
+<style>
+#real {display:none;}
+#login-screen {
+background-color: #799E9E;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+text-align: center;
+}
+#login-screen input, #login-screen button {
+margin: 10px;
+padding: 8px;
+font-size: 1rem;
+}
+#wrong {
+color: red;
+margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+
+<div id="login-screen">
+<h2>Enter Password</h2>
+<input id="pass" type="password" placeholder="Password">
+<button onclick="go()">Submit</button>
+<p id="wrong" style="display:none;">Wrong password</p>
+</div>
+
+<div id="real">
+-->
+
+<!-- REAL WEBSITE starts here -->
+
+<h1><strong>Websites</strong></h1>
+<img src="https://placecats.com/millie_neo/300/200" alt="cute cat" class="cat-pic">
+<h3 class="workabout"><a href="page1/index.html" target="_blank">About me and this website :D</a></h3>
+<div></div>
+<div class="section">
+  <button class="expand-btn1" onclick="toggle('games')">Guides ▼</button>
+  <div id="games" class="hidden">
+<h3 class="work"><a href="jailbreak/index.html" target="_blank">jailbreak info</a></h3>
+<h3 class="work"><a href="minecraft/index.html" target="_blank">minecraft info</a></h3>
+<h3 class="work"><a href="brawlstars/index.html" target="_blank">brawlstars info</a> </h3>
+<h3 class="work"><a href="https://docs.google.com/document/d/1sGDG4WQgwa_AdkBCsUef_nj_mlWvv_jR1jhSzYY1iEE/edit" target="_blank">beeswarm guide by sasha</a></h3>
+</div>
+</div>
+
+<h3 class="work"><a href="eaglercraft all/index.html" target="_blank">all eaglercraft versions</a></h3>
+
+
+<div class="floating-box">new changes to website: small changes such as the favicon and the title of the website (sorry for the guys at harmony) </div>
+
+<h2>main game websites(others in convience)</h2>
+<!--<h3 class="work"><a href="shadows/index.html" target="_blank">Shadow's</a></h3>-->
+
+<h3 class="work"><a href="nativealpha/index.html" target="_blank">Main games</a></h3>
+<h3 class="work"><a href="binbash/index.html" target="_blank">binbash</a></h3>
+<h3 class="work"><a href="chrisp/index.html" target="_blank">chrispycrabs games</a></h3>
+
+<div class="section">
+  <button class="expand-btn" onclick="toggle('experimental')">Experimental stuff ▼</button>
+  <div id="experimental" class="hidden">
+<h3 class="work"><a href="convinience/index.html" target="_blank">convinience websites</a></h3>
+<h3 class="work"><a href="other-games/index.html" target="_blank">othergames (experimental)</a></h3>
+<h3 class="work"><a href="videos/index.html" target="_blank">random yt videos</a></h3>
+<h3 class="work"><a href="blackoutgames (not in yet)/index.html" target="_blank">blackout games(HAS A SEARCH ENGINE)</a></h3>
+</div>
+</div>
+</div>
+<!--
+<script>
+function go() {
+if (document.getElementById('pass').value == '12IH') { // change 'yourpassword'
+document.getElementById('login-screen').style.display = 'none';
+document.getElementById('real').style.display = 'block';
+} else {
+document.getElementById('wrong').style.display = 'block';
+}
+}
+-->
+
+<script>
+function toggle(id) {
+  const section = document.getElementById(id);
+  section.classList.toggle('hidden');
+}
+</script>
+
+<script>
+  const premiumEmails = ["isaemirtm@gmail.com", "anotherpremium@gmail.com"]; // your premium users
+
+  firebase.auth().onAuthStateChanged(user => {
+    if (!user) {
+      // Not signed in
+      window.location.href = "index.html";
+    } else if (!premiumEmails.includes(user.email)) {
+      // Signed in, but not premium
+      window.location.href = "free.html";
+    }
+    // Else: allowed in
+  });
+</script>
+
+
+</body>
+</html>
