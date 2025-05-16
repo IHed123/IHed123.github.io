@@ -132,5 +132,21 @@ function toggle(id) {
 }
 </script>
 
+<script>
+  const premiumEmails = ["isaemirtm@gmail.com", "anotherpremium@gmail.com"]; // your premium users
+
+  firebase.auth().onAuthStateChanged(user => {
+    if (!user) {
+      // Not signed in
+      window.location.href = "index.html";
+    } else if (!premiumEmails.includes(user.email)) {
+      // Signed in, but not premium
+      window.location.href = "free.html";
+    }
+    // Else: allowed in
+  });
+</script>
+
+
 </body>
 </html>
