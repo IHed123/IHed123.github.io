@@ -12,32 +12,32 @@
   {
     "name": "0hh1",
     "url": "0hh1",
-    "image": "2048.png"
+    "image": "img/icon-120.png"
   },
   {
     "name": "0hn0",
     "url": "0hn0",
-    "image": "run3.png"
+    "image": "img/icon-120.png"
   },
   {
-    "name": "run3",
-    "url": "run3",
-    "image": "run3.png"
+    "name": "2048",
+    "url": "2048",
+    "image": "favicon.ico"
   },
   {
     "name": "alienhominid",
     "url": "alienhominid",
-    "image": "run3.png"
+    "image": "alien"
   },
   {
     "name": "amidstthesky",
     "url": "amidstthesky",
-    "image": "run3.png"
+    "image": "favicon.ico"
   },
   {
     "name": "among-us",
     "url": "among-us",
-    "image": "run3.png"
+    "image": "red.png"
   },
   {
     "name": "animatorvsanimation",
@@ -496,9 +496,9 @@
     "image": "SLIcon.webp"
   },
   {
-    "name": "Run 3",
-    "url": "run3",
-    "image": "run3.png"
+    "name": "adarkroom",
+    "url": "adarkroom",
+    "image": "img/Logo1.jpg"
   },
   {
     "name": "Run 3",
