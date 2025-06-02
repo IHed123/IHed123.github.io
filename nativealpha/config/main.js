@@ -16,7 +16,7 @@ function displayGames(games) {
     div.className = "game";
 
     const img = document.createElement("img");
-    img.src = `games/${game.url}/${game.image}`;
+    img.src = nativealpha/gim/;
     img.alt = game.name;
 
     const name = document.createElement("p");
