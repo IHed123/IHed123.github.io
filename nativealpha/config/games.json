@@ -27,7 +27,7 @@
   {
     "name": "alienhominid",
     "url": "alienhominid",
-    "image": "alien"
+    "image": "alienhominid.jpg"
   },
   {
     "name": "amidstthesky",
@@ -42,12 +42,12 @@
   {
     "name": "animatorvsanimation",
     "url": "animatorvsanimation",
-    "image": "run3.png"
+    "image": "animatorvsanimation.jpg"
   },
   {
     "name": "asteroids",
     "url": "asteroids",
-    "image": "gim/2048.png"
+    "image": "asteroids.jpg"
   },
   {
     "name": "astray",
