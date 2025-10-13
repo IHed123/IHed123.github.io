@@ -1,60 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home | Schoology</title>
-	<link href="style.css" rel="stylesheet">
-    <link rel="icon" type="png" href="favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>| Quikschool</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!--
+<style>
+#real {display:none;}
+#login-screen {
+background-color: #799E9E;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+text-align: center;
+}
+#login-screen input, #login-screen button {
+margin: 10px;
+padding: 8px;
+font-size: 1rem;
+}
+#wrong {
+color: red;
+margin-top: 10px;
+}
+</style>
+
 </head>
 <body>
 
-<h1><strong>Websites</strong></h1>
-<img src="http://placekitten.com/200/300" alt="cute cat" class="cat-pic">
+<div id="login-screen">
+<h2>Enter Password</h2>
+<input id="pass" type="password" placeholder="Password">
+<button onclick="go()">Submit</button>
+<p id="wrong" style="display:none;">Wrong password</p>
+</div>
+
+<div id="real">
+-->
+
+<!-- REAL WEBSITE starts here -->
+
+<h1><strong>Isas game Website</strong></h1>
+<img src="https://placecats.com/millie_neo/300/200" alt="cute cat" class="cat-pic">
 <a href="page1/index.html" target="_blank"><h3>About me and this website :D</h3></a>
 <div></div>
-<h3 class="work">click <a href="jailbreak/index.html" target="_blank">here</a> for jailbreak info</h3>
-<h3 class="work">click <a href="minecraft/index.html" target="_blank">here</a> for minecraft info</h3>
-<h3 class="work">click <a href="brawlstars/index.html" target="_blank">here</a> for brawlstars info</h3>
-<h3 class="work">click <a href="https://docs.google.com/document/d/1sGDG4WQgwa_AdkBCsUef_nj_mlWvv_jR1jhSzYY1iEE/edit" target="_blank">here</a> for beeswarm guide by sasha</h3>
+<div class="section">
+  <button class="expand-btn1" onclick="toggle('games')">Guides ▼</button>
+  <div id="games" class="hidden">
+<h3 class="work"><a href="jailbreak/index.html" target="_blank">jailbreak info</a></h3>
+<h3 class="work"><a href="minecraft/index.html" target="_blank">minecraft info</a></h3>
+<h3 class="work"><a href="brawlstars/index.html" target="_blank">brawlstars info</a> </h3>
+<h3 class="work"><a href="https://docs.google.com/document/d/1sGDG4WQgwa_AdkBCsUef_nj_mlWvv_jR1jhSzYY1iEE/edit" target="_blank">beeswarm guide by sasha</a></h3>
+</div>
+</div>
 
-<div>new changes to website: I FIXED CHRISPYCRABSS WOOO :) </div>
-<h4>"game" websites</h4>
-<h3 class="work">click <a href="eaglercraft/index.html" target="_blank">here</a> for NEWEST version of eaglercraft</h3>
-<h3 class="work">click <a href="native/sr/index.html" target="_blank">here</a> for soccer random</h3>
-<h3 class="work">click <a href="shadows/index.html" target="_blank">here</a> for Shadow's</h3>
-<h3 class="work">click <a href="native/index.html" target="_blank">here</a> for native</h3>
-<h3 class="work">click <a href="binbash/index.html" target="_blank">here</a> for binbash</h3>
-<h3 class="work">click <a href="https://sites.google.com/student.harmonytx.org/isas-games/home" target="_blank">here</a> for isas site games</h3>
-<h3 class="work">click <a href="chrispycrabs.github.io/index.html" target="_blank">here</a> for chrispycrabs games (FINALLY WORKS WOOOO, i spent all night tryna figure out how to fix)</h3>
-<h3 class="work">click <a href="https://www.coolmathgames.com/" target="_blank">here</a> for coolmath games</h3>
-<h3 class="work">click <a href="https://scratch.mit.edu/" target="_blank">here</a> for scratch</h3>
-<h3 class="work">click <a href="https://neal.fun/" target="_blank">here</a> for neal.fun (its blocked now sadly)</h3>
-<h3 class="work">click <a href="https://www.nytimes.com/crosswords" target="_blank">here</a> for nytimes games</h3>
-<h3 class="work">click <a href="https://monkeytype.com/" target="_blank">here</a> for monkey type</h3>
-<h3 class="work">click <a href="https://www.abcya.com/" target="_blank">here</a> for abcya</h3>
-<h3 class="work">click <a href="https://geoguessr.com/" target="_blank">here</a> for geoguessr</h3>
+<h3 class="work"><a href="eaglercraft all/index.html" target="_blank">all eaglercraft versions</a></h3>
 
-<h4>other stuff (experimental and may not work)</h4>
-<h3 class="work">click <a href="convinience/index.html" target="_blank">here</a> for convinience websites</h3>
-<h3 class="work">click <a href="other-games/index.html" target="_blank">here</a> for othergames (experimental)</h3>
-<h3 class="work">click <a href="videos/index.html" target="_blank">here</a> for random yt videos</h3>
 
-<h2> SEARCH ENGINE LINK MAIN (ill unblock it later rn im too lazy)</h2>
+<div class="floating-box">new changes to website: added buttons for sleeker look made my own game launcher website with 100's of games </div>
 
-<h3>click <a href="https://sites.google.com/view/searchenginebyisaig/home">here</a></h3>
+<h2>main game websites(others in convience)</h2>
+<!--<h3 class="work"><a href="shadows/index.html" target="_blank">Shadow's</a></h3>-->
 
-<h2>SECONDARY SEARCH ENGINE (its blocked i forgor about this)</h2>
+<h3 class="work"><a href="nativealpha/index.html" target="_blank">My own game website</a></h3>
+<h3 class="work"><a href="binbash/index.html" target="_blank">binbash</a></h3>
+<h3 class="work"><a href="https://sites.google.com/student.harmonytx.org/isas-games/home" target="_blank">isas site games</a></h3>
+<h3 class="work"><a href="chrisp/index.html" target="_blank">chrispycrabs games</a></h3>
 
-<h3>click <a href="https://sites.google.com/view/searchengineludicrous/home">here</a></h3>
+<div class="section">
+  <button class="expand-btn" onclick="toggle('experimental')">Experimental stuff ▼</button>
+  <div id="experimental" class="hidden">
+<h3 class="work"><a href="convinience/index.html" target="_blank">convinience websites</a></h3>
+<h3 class="work"><a href="other-games/index.html" target="_blank">othergames (experimental)</a></h3>
+<h3 class="work"><a href="videos/index.html" target="_blank">random yt videos</a></h3>
+<h3 class="work"><a href="blackoutgames (not in yet)/index.html" target="_blank">blackout games(HAS A SEARCH ENGINE)</a></h3>
+</div>
+</div>
 
-<h2>credits</h2>
-<p>css and html and js made by isa (shadows, native, and binbash are not made my me.)
-	(credits to kaylas brother for the chrispycrabs games)
-</p>
-<button onclick="noice()">random button</button>
+
+</div>
+<!--
 <script>
- function noice() { alert("wow you clicked the button thank you for using my website :D"); }
- </script>
+function go() {
+if (document.getElementById('pass').value == '12IH') { // change 'yourpassword'
+document.getElementById('login-screen').style.display = 'none';
+document.getElementById('real').style.display = 'block';
+} else {
+document.getElementById('wrong').style.display = 'block';
+}
+}
+-->
+
+<script>
+function toggle(id) {
+  const section = document.getElementById(id);
+  section.classList.toggle('hidden');
+}
+</script>
+
+
+
+
 </body>
 </html>

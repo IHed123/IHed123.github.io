@@ -2,6 +2,24 @@
 //
 // Copyright (c) 2010 Doug McInnes
 //
+// Ensure canvas context exists
+if(!document.getElementById('canvas')) {
+    console.error("Canvas missing! Creating emergency canvas");
+    var emergencyCanvas = document.createElement('canvas');
+    emergencyCanvas.id = 'canvas';
+    emergencyCanvas.width = 780;
+    emergencyCanvas.height = 540;
+    document.body.appendChild(emergencyCanvas);
+}
+
+// Override potentially missing dependencies
+window.Text = window.Text || {
+    renderText: function() { /* dummy */ }
+};
+window.SFX = window.SFX || {
+    laser: { play: function(){} },
+    explosion: { play: function(){} }
+};
 
 KEY_CODES = {
   32: 'space',
