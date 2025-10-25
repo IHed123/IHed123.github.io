@@ -88,21 +88,26 @@ onAuthStateChanged(auth, async (user) => {
   if (user) {
     let isPremium = false;
 
-    // Check hard‑coded list
     if (USE_HARDCODED_LIST && premiumEmails.includes(user.email)) {
       isPremium = true;
     }
-
-    // Check Firestore list
     if (USE_FIRESTORE_LIST && await checkPremium(user.uid)) {
       isPremium = true;
     }
 
-    // Redirect based on result
-    if (isPremium) {
+    const currentPage = window.location.pathname;
+
+    if (isPremium && !currentPage.endsWith("premium.html")) {
       window.location.href = "premium.html";
-    } else {
+    } else if (!isPremium && !currentPage.endsWith("limited.html")) {
       window.location.href = "limited.html";
+    }
+  } else {
+    // If not logged in and not already on index.html, send back to login
+    const currentPage = window.location.pathname;
+    if (!currentPage.endsWith("index.html")) {
+      window.location.href = "index.html";
     }
   }
 });
+
