@@ -103,6 +103,21 @@ function toggle(id) {
 }
 </script>
 
+<button id="logoutBtn">Logout</button>
+<script type="module">
+  import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+  const auth = getAuth();
+
+  document.getElementById("logoutBtn").onclick = () => {
+    signOut(auth).then(() => {
+      // Redirect back to login screen
+      window.location.href = "index.html";
+    }).catch((error) => {
+      console.error("Logout error:", error);
+    });
+  };
+</script>
 
 
 
