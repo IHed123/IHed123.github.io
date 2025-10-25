@@ -95,7 +95,7 @@ document.getElementById('wrong').style.display = 'block';
 }
 }
 -->
-
+<button id="logoutBtn">Logout</button>
 <script>
 function toggle(id) {
   const section = document.getElementById(id);
@@ -103,7 +103,7 @@ function toggle(id) {
 }
 </script>
 
-<button id="logoutBtn">Logout</button>
+<script type="module" src="auth.js"></script>
 <script type="module">
   import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 

@@ -63,14 +63,14 @@ margin-top: 10px;
 
 
 <div class="floating-box">new changes to website: added buttons for sleeker look made my own game launcher website with 100's of games </div>
-
+<button id="logoutBtn">Logout</button>
 <script>
 function toggle(id) {
   const section = document.getElementById(id);
   section.classList.toggle('hidden');
 }
 </script>
-<button id="logoutBtn">Logout</button>
+<script type="module" src="auth.js"></script>
 <script type="module">
   import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
