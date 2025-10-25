@@ -8,13 +8,20 @@
 <body>
   <div id="login-screen">
     <h2>Login</h2>
+
+    <!-- Email/password form -->
     <input id="email" type="email" placeholder="Email">
     <input id="password" type="password" placeholder="Password">
-    <button id="loginBtn">Login</button>
+    <button id="loginBtn">Login with Email</button>
+
+    <hr>
+
+    <!-- Google button -->
+    <button id="googleLoginBtn">Sign in with Google</button>
+
     <p id="error" style="color:red; display:none;">Login failed</p>
   </div>
 
-  <!-- Firebase logic -->
   <script type="module" src="auth.js"></script>
 </body>
 </html>

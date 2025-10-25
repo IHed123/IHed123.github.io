@@ -1,6 +1,12 @@
 // Import Firebase SDKs
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { 
+  getAuth, 
+  signInWithEmailAndPassword, 
+  onAuthStateChanged, 
+  signInWithPopup, 
+  GoogleAuthProvider 
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // -------------------------
@@ -31,7 +37,7 @@ const USE_FIRESTORE_LIST = false;  // set to false to ignore Firestore
 // -------------------------
 const premiumEmails = [
   "alice@gmail.com",
-  "bob@yahoo.com",
+  "isaemirtm@gmail.com",
   "isa@myhla.org"
 ];
 
@@ -45,20 +51,38 @@ async function checkPremium(uid) {
 }
 
 // -------------------------
-// 5. Handle login button
+// 5. Handle email/password login
 // -------------------------
-document.getElementById("loginBtn").onclick = async () => {
-  const email = document.getElementById("email").value;
-  const pass = document.getElementById("password").value;
-  try {
-    await signInWithEmailAndPassword(auth, email, pass);
-  } catch (err) {
-    document.getElementById("error").style.display = "block";
-  }
-};
+const loginBtn = document.getElementById("loginBtn");
+if (loginBtn) {
+  loginBtn.onclick = async () => {
+    const email = document.getElementById("email").value;
+    const pass = document.getElementById("password").value;
+    try {
+      await signInWithEmailAndPassword(auth, email, pass);
+    } catch (err) {
+      document.getElementById("error").style.display = "block";
+    }
+  };
+}
 
 // -------------------------
-// 6. Redirect after login
+// 6. Handle Google login
+// -------------------------
+const googleBtn = document.getElementById("googleLoginBtn");
+if (googleBtn) {
+  googleBtn.onclick = async () => {
+    const provider = new GoogleAuthProvider();
+    try {
+      await signInWithPopup(auth, provider);
+    } catch (err) {
+      document.getElementById("error").style.display = "block";
+    }
+  };
+}
+
+// -------------------------
+// 7. Redirect after login
 // -------------------------
 onAuthStateChanged(auth, async (user) => {
   if (user) {
@@ -82,4 +106,3 @@ onAuthStateChanged(auth, async (user) => {
     }
   }
 });
-
