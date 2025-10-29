@@ -163,6 +163,20 @@ button:active,
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.181);
 }
 
+/* Make the embedded calculator align to the right on larger viewports
+   and remain responsive on small screens. Previously the .calc rule
+   was only inside a narrow media query, so it wasn't applied on desktop. */
+.calc {
+  max-width: 500px;
+  width: 350px;
+  height: 830px;
+  float: right;
+  margin: 0 0 1rem 1rem; /* space to the left when floated */
+  margin-top: 100px;
+  border: none;
+  position: relative;
+}
+
 .hidden {
   display: none;
   transition: all 0.3s ease;
@@ -180,6 +194,18 @@ button:active,
     box-shadow: none;
     border-radius: 0;
   }
+  .calc {
+    /* mobile: full-width, no float, natural height */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    float: none;
+    margin: 0 0 1rem 0;
+    border: none;
+    position: static;
+  }
+
+
 
   .cat-pic {
     position: static;
