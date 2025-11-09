@@ -99,11 +99,21 @@ onAuthStateChanged(auth, async (user) => {
 
     const currentPage = window.location.pathname;
 
-    if (isPremium && !currentPage.endsWith("premium.html")) {
-      window.location.href = "premium.html";
-    } else if (!isPremium && !currentPage.endsWith("limited.html")) {
-      window.location.href = "limited.html";
-    }
+      // Determine the current filename (empty string for root '/').
+      const page = currentPage.substring(currentPage.lastIndexOf('/') + 1);
+
+      // Only auto-redirect when the user just landed on the login/root page
+      // (i.e. index.html or the site root). This prevents forcing navigation
+      // when the user intentionally visits other pages while signed in.
+      const arrivedAtLogin = page === '' || page === 'index.html';
+
+      if (arrivedAtLogin) {
+        if (isPremium) {
+          window.location.href = "premium.html";
+        } else {
+          window.location.href = "limited.html";
+        }
+      }
   } else {
     // If not logged in and not already on index.html, send back to login
     const currentPage = window.location.pathname;
