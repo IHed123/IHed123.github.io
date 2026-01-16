@@ -36,11 +36,7 @@ const USE_FIRESTORE_LIST = false;  // set to false to ignore Firestore
 // 3. Hard‑coded premium emails
 // -------------------------
 const premiumEmails = [
-  "isaemirtm@gmail.com",
-  "isa@myhla.org",
-  "8023775@student.harmonytx.org",
-  "8001399@student.harmonytx.org",
-  "8001399@student.harmonytx.org"
+  
 ];
 
 // -------------------------
